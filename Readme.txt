@@ -8,7 +8,7 @@ Step 02: Open Command Prompt(Windows) or Terminal(Linux) and type
 Step 03: Setup Mysql and Postgresql in OS.
 Step 04: Create Databases by the name database_1 and database_2 in Postgresql.
 Step 05: Create Databases by the name database_3, database_4 and database_5 in Mysql.
-Step 06: Migrating databases, On Command Prompt or Terminal, type:
+Step 06: Migrating databases,Open Command Prompt or Terminal at project's main directory, type:
          python manage.py makemigrations
          python manage.py migrate
          python manage.py migrate --database=database_1
