@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Database Data</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+    <table class="table table-hover">
+        <thead class="table-dark">
+        <tr>
+
+            <th>Product Name</th>
+            <th>Database Name</th>
+            <th>User</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for x in obj1 %}
+                <tr>
+                <td>{{ x.product }}</td>
+                <td>Database 1</td>
+                <td><b>{{ x.user.capitalize }}</b></td>
+                <td><a href="{% url 'view_1' %}" class="btn btn-primary">View in Database</a></td>
+                </tr>
+            {% endfor %}
+
+            {% for x in obj2 %}
+                <tr>
+                <td>{{ x.product }}</td>
+                <td>Database 2</td>
+                <td><b>{{ x.user.capitalize }}</b></td>
+                <td><a href="{% url 'view_2' %}" class="btn btn-primary">View in Database</a></td>
+                </tr>
+            {% endfor %}
+
+                    {% for x in obj3 %}
+                <tr>
+                <td>{{ x.product }}</td>
+                <td>Database 3</td>
+                                <td><b>{{ x.user.capitalize }}</b></td>
+                    <td><a href="{% url 'view_3' %}" class="btn btn-primary">View in Database</a></td>
+                </tr>
+            {% endfor %}
+
+                    {% for x in obj4 %}
+                <tr>
+                <td>{{ x.product }}</td>
+                <td>Database 4</td>
+                                <td><b>{{ x.user.capitalize }}</b></td>
+                    <td><a href="{% url 'view_4' %}" class="btn btn-primary">View in Database</a></td>
+                </tr>
+            {% endfor %}
+
+                    {% for x in obj5 %}
+                <tr>
+                <td>{{ x.product }}</td>
+                <td>Database 5</td>
+                                <td><b>{{ x.user.capitalize }}</b></td>
+                <td><a href="{% url 'view_5' %}" class="btn btn-primary">View in Database</a></td>
+                </tr>
+            {% endfor %}
+        
+
+        </tbody>
+    </table>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,9 @@
+Django==2.2.3
+django-admin-view-permission==1.9
+django-crispy-forms==1.7.2
+django-multiselectfield==0.1.8
+mysqlclient==1.4.2.post1
+psycopg2==2.8.3
+PyMySQL==0.9.3
+pytz==2019.1
+sqlparse==0.3.0

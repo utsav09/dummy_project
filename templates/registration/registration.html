@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <title>Registration</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <br>
+                <div style="text-align: center;"><h1>Register User</h1></div>
+            <br>
+            {% load crispy_forms_tags %}
+
+            <form action="" method="post">
+                {% csrf_token %}
+
+                {{ form | crispy}}
+
+                <br>
+                <div style="text-align: center;"><button class="btn btn-lg col-4 btn-outline-dark">Register</button></div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
